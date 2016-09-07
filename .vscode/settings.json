@@ -1,0 +1,49 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "launcher.terminal": {
+    "executable": "cmd.exe",
+    "parameters": "/c start /wait"
+    },
+    "launcher.commands": [
+    {
+        "description": "Bash (Workspace)",
+        "executable": "C:\\Users\\User1\\AppData\\Local\\Programs\\Git\\git-bash.exe",
+        "startIn": "%workspace%"
+    },
+    {
+        "description": "Run on NodeMCU",
+        "executable": "nodemcu-tool",
+        "parameters": "run %item%",
+        "startIn": "%workspace%",
+        "output": true
+    },
+     {
+        "description": "Upload to NodeMCU",
+        "executable": "nodemcu-tool",
+        "parameters": "upload %item%",
+        "output": true
+    },
+    {
+        "description": "Bash (Current File)",
+        "executable": "C:\\Users\\User1\\AppData\\Local\\Programs\\Git\\git-bash.exe",
+        "startIn": "%item_path%"
+    },
+    {
+        "description": "Edit Current File",
+        "executable": "notepad.exe",
+        "parameters": "%item%",
+        "startIn": "%workspace%"
+    },
+    {
+        "description": "Calculator",
+        "executable": "calc.exe"
+    },
+    {
+        "description": "List files in Workspace folder",
+        "executable": "cmd.exe",
+        "parameters": "/c dir",
+        "startIn": "%workspace%",
+        "output": true
+    }
+]
+}
