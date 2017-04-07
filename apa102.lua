@@ -6,7 +6,7 @@ function glowLeds()
    -- get brigter then darker by 20%
       luminance_inc = 0.20
       luminance_dec = -0.20
- ""
+ 
 
      for i=1,100 do   
          g = (math.ceil(math.min(math.max(0, g + (g * luminance_inc)), 255)))
@@ -27,7 +27,7 @@ function glowLeds()
 
 end
 
-
+-- need to setup a TCP server, express is total overkill and a memory hog
 
  local espress = require 'espress'
  local port = 80
