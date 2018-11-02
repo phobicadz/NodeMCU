@@ -1,6 +1,6 @@
 wifi.setmode(wifi.STATION)
 -- Replace here with your wifi config
-wifi.sta.config("TelegraphLane", "mabelelizabeth")
+wifi.sta.config("xxxx", "xxxx")
 wifi.sta.connect()
 print("---------------------------")
 print("Connecting to Wifi")
